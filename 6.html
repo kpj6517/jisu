@@ -1,0 +1,22 @@
+<style>
+.ex-layout{width: 900px;}
+.ex-layout .gnb{padding: 30px;background-color: skyblue;}
+.ex-layout .main{background-color: white;}
+.ex-layout .main:after{ clear: both; display: block; content: '' }
+.ex-layout .main .lnb{float: left;	width: 100px;	height: 254px;
+  background-color: orange;}
+.ex-layout .main .content{float: left;	width: 400px;}
+.ex-layout .footer{	padding: 15px;	background-color: #ddd;}
+</style>
+<div class="ex-layout">
+	<div class="gnb">Global menu</div>
+	<div class="main">
+		<div class="lnb">Left menu</div>
+		<div class="content">
+			Content area
+		</div>
+	</div>
+	<div class="footer">
+		Footer area
+	</div>
+</div>
