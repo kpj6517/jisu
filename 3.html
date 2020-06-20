@@ -6,10 +6,21 @@
   <meta content="utf-8">
   <title>(주)지수냉열</title>
 </head>
-<body>
+<body onload="showClock()">
   <a href="1.html" title="(주)지수냉열 첫 페이지 이동"><img href="1.html" target="_self" src="jisu main-1.jpg" alt="JISU SYSTEM LOGO" style="width: 400px; height: auto;"></a>
   <style>mark{background:hotpink}</style>
   <hr /><h4><pre><mark>회사 대표 전화 번호</mark> / ☏ 055 - 748 - 7799  / rokmclgc@daum.net / <time datetime="2020-06-14T11:19:36" pubdate="pubdate">2020년 06월 14일</time></pre></h4>
+    <script language="javascript">
+      var connectedDate = new Date();
+      function showClock(){
+          var currentDate = new Date();
+          var divClock = document.getElementById("divClock");
+          var result = Math.ceil((currentDate - connectedDate)/1000);
+          divClock.innerText = "이 페이지에 접속 후"+result;
+          divClock.innerText +="초가 지났습니다.";
+          setTimeout(showClock,1000);}
+    </script>
+      <div id="divClock" class="clock"></div>
   <h2>유 지 보 수</h2>
   <h3>목차</h3>
   <ul>
